@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>컴포넌트 모음</title>
+    <link rel="stylesheet" href="component.css">
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="component.js"></script>
+</head>
+
+<body>
+    <h1>컴포넌트 모음</h1>
+
+    <h2>아코디언</h2>
+    <!--
+        cmpt : 컴포넌트 이름
+        open : 처음 보여줄때 열려있을 .d1>li번호 / 없을시 공백
+        dur : 속도
+    -->
+    <div id="menu" data-cmpt="arcodian" data-open="1" data-dur="200">
+        <ul class="d1">
+            <li>
+                <a href="#">메뉴1</a>
+                <ul class="d2">
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+                <ul class="d2">
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+                <ul class="d2">
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                    <li><a href="#">메뉴4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h3>스타일 없을때</h3>
+    <div data-cmpt="arcodian" data-open="1" data-dur="200">
+        <ul class="d1">
+            <li>
+                <a href="#">메뉴1</a>
+                <ul class="d2">
+                    <li><a href="#">--메뉴1</a></li>
+                    <li><a href="#">--메뉴2</a></li>
+                    <li><a href="#">--메뉴3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+                <ul class="d2">
+                    <li><a href="#">--메뉴1</a></li>
+                    <li><a href="#">--메뉴2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+                <ul class="d2">
+                    <li><a href="#">--메뉴1</a></li>
+                    <li><a href="#">--메뉴2</a></li>
+                    <li><a href="#">--메뉴3</a></li>
+                    <li><a href="#">--메뉴4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
